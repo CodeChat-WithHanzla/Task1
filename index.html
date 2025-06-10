@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with Hamburger</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/6836df3e8278e50f089c6536_Asset%206%404x-8.png"
+        alt="Logo"
+        class="logo"
+      />
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span id="hamburger-icon">&#9776;</span>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <div>Home</div>
+        <div>Services</div>
+        <div>Careers</div>
+      </div>
+
+      <div class="cta">Book a Call</div>
+    </nav>
+    <section class="header-section">
+      <div class="header-section-left">
+        <p class="header-section-left-welcome">Welcome to Cogent Lab</p>
+        <p class="header-section-left-welcome-p2">
+            Your Competitor Isn’t Smarter—Their AI Agent Is
+            <p class="header-section-left-welcome-p3">We specialize in practical AI agents that deliver real-world results, measurable and undeniable.</p>
+        </p>
+        <button type="button" class="cta-section">Book a Call</button>
+      </div>
+      <div class="header-section-right">
+        <div class="two-boxes">
+            <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/68244de84102b0b2107ee6d8_photo-square-15.webp" alt="pic">
+            <div class="black-box"><span>93% Projects</span><br/><span class="span-2">delivered on time <br/> and on budget</span></div>
+        </div>
+        <div class="bottom-box">
+            <div class="">
+                <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/68244de84102b0b2107ee754_icon-input-white.svg" alt="">
+            <p>Discover our custom-built AI agents in action</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="slider">
+  <div class="slider-track">
+    <div class="slider-item">Just Absolute Results.</div>
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-eVrlmJigmntqxgNiKxGRJOJ756WAMK19Nq2Sno4rDM8-wprI" alt="">
+    <div class="slider-item">No Ifs. No Buts</div>
+    <img src="data:image/png;base64,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" alt="">
+    <div class="slider-item">Just Absolute Results.</div>
+   <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-eVrlmJigmntqxgNiKxGRJOJ756WAMK19Nq2Sno4rDM8-wprI" alt="">
+    <div class="slider-item">No Ifs. No Buts</div>
+    <img src="data:image/png;base64,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" alt="">
+  </div>
+    </div>
+
+   <section class="solution-section">
+    <div class="solution-section-l1">What solution do you need
+        <p>Shaping Your Digital Journey for Success</p>
+    </div>
+    <div class="cards">
+        <div class="card">
+                <img class="card-top" src="https://cdn.prod.website-files.com/68244de84102b0b2107ee6cb/683ee31303a63aa548f2b073_gen-ai.svg" alt="">
+            <div class="card-bottom">
+                <p class="card-title">Generative AI</p>
+                <p class="card-description">Falling behind in the AI race? We help you move from confusion to execution.Discover what GenAI can do for your business.</p>
+            </div>
+        </div>
+        <div class="card">
+                <img class="card-top" src="https://cdn.prod.website-files.com/68244de84102b0b2107ee6cb/683db2a2d3ca2cb57d6d33f9_Frame%2058-3.svg" alt="">
+            <div class="card-bottom">
+              <p class="card-title">Web/Mobile Development</p>
+                <p class="card-description">Falling behind in the AI race? We help you move from confusion to execution.Discover what GenAI can do for your business.</p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+<section class="last-section">
+ <div class="last-section-part1">
+  <div class="desc">
+   <div class="">
+     <p class="p-1">Our success story</p>
+    <p class="p-2"><span>Streamlined Chughtai Lab's</span> <br/> operations with scalable, intelligent solutions.</p>
+   </div>
+   <div class="last_tab">
+      <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/68244de84102b0b2107ee75c_icon-positive-dynamic-white.svg" alt="">
+    <div class="info"><span>30x increase in orders per </span><br/><span>annum</span></span> <br/>
+      Streamlined Chughtai Lab's logistics operations with AI-powered routing</div>
+   </div>
+  </div>
+ <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/683597484d0ee90dbf243a5e_Rider-p-1600.webp" alt="">
+ </div>
+</section>
+
+<section class="last-section-2">
+  <p class="heading">TRUSTED CLIENTS AND PARTNERS</p>
+ <div class="boxes">
+   <div class="box">
+    <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/6836d9bbbe2ac396b94beff0_Blabble.png" alt="">
+  </div>
+  <div class="box">
+    <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/6836d9bb1b92365354067b8a_Maxab.png" alt="">
+  </div>
+  <div class="box">
+    <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/6836d9bd0ef452c3fbdf6f06_NHS.png" alt="">
+  </div>
+  <div class="box">
+    <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/6836d9bd00f731f9268ad97a_Narratize.png" alt="">
+  </div>
+  <div class="box">
+    <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/6836d9bb3fa0ec6ea5c4e30d_Aurora.png" alt="">
+  </div>
+  <div class="box">
+    <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/6836d9bbf133320907114100_Boosted.png" alt="">
+  </div>
+  <div class="box">
+    <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/6836d9bd0cc164a441c597a2_Options%20Depth.png" alt="">
+  </div>
+  <div class="box">
+    <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/6836d9bd3b8f4b5ce055a38b_Unicef.png" alt="">
+  </div>
+ </div>
+</section>
+ 
+    <section class="feedback">
+  <p class="heading">Success, Powered by Cogent Labs</p>
+
+  <div class="testimonial-card">
+    <img src="https://cdn.prod.website-files.com/68244de84102b0b2107ee628/683ef390e58d2272daf37ebf_Scott%202%20(1).png" alt="">
+    <div class="text-part">
+      <p class="comment">“Cogent Labs have been absolutely incredible to work with. They are highly professional, extremely prompt, and bring a diverse range of skill sets to the table.”</p>
+      <div class="intro">
+        <p class="name">Scott</p>
+        <p class="role">Founder, Aurora</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

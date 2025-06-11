@@ -12,6 +12,10 @@ nav {
     flex-wrap: wrap;
     position: relative;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    font-size: 1rem;
 }
 
 .logo {
@@ -319,13 +323,23 @@ nav {
     font-weight: 700;
 }
 
+.all-testimonials {
+    position: relative;
+    padding: 5rem 15rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
 .testimonial-card {
-    margin-top: 5rem;
+
     width: 642px;
     height: 332px;
     display: flex;
     border-radius: 9px;
-    border: 4px solid #6A6A6A; 
+    border: 4px solid #6A6A6A;
 }
 
 .testimonial-card .text-part {
@@ -342,26 +356,59 @@ nav {
 .testimonial-card .text-part .intro {
     font-size: 17px;
 }
+
 .testimonial-card .text-part {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 .testimonial-card .text-part .intro .name {
     padding-top: 1rem;
-     border-top: 3px solid #6A6A6A;
-     text-align: center;
-     
+    border-top: 3px solid #6A6A6A;
+    text-align: center;
+
 }
-.testimonial-card .text-part .intro .role{
+
+.testimonial-card .text-part .intro .role {
     color: #BDC0C0;
     font-size: 1rem;
 }
+
 .testimonial-card img {
     width: 50%;
     border-radius: 4px;
     object-fit: cover;
     border-right: 5px solid #6A6A6A;
+}
+.arrows {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 1rem;
+  padding: 0 20px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.left-arrow,
+.right-arrow {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: #bdb7b7;
+  transform: scale(1.1);
 }
 
 @keyframes scroll {

@@ -70,3 +70,13 @@ const sliderData = [
   });
 
   renderTestimonial(currentIndex);
+
+  document.querySelectorAll('.open-close').forEach(toggleBtn => {
+    toggleBtn.addEventListener('click', () => {
+      const simpleText = toggleBtn.parentElement.querySelector('.simple-text');
+      const isVisible = simpleText.style.display === 'block';
+
+      simpleText.style.display = isVisible ? 'none' : 'block';
+      toggleBtn.textContent = isVisible ? 'v' : '^';
+    });
+  });
